@@ -1,17 +1,20 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: deeppink;
 }
 
 main {
     display: flex;
     flex-direction: row; 
     flex: auto;
+    background-color: pink;
 }
 
 article {
     flex: 2; 
     overflow-y: auto;
+    text-align: center;
 }
 
 aside {
