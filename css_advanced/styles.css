@@ -345,3 +345,38 @@ nav ul li a {
 .free_membership button:hover {
     opacity: 0.9;
 }
+
+.faq-section {
+    background-color: white;
+    color: black;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background-color: transparent;
+    text-align: left;
+}
+
+.faq-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
