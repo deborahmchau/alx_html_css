@@ -278,3 +278,70 @@ nav ul li a {
     color: mediumpurple;
     margin-left: auto;
 }
+
+.free_membership {
+    background-color: #2c2f48; /* dark bluish-gray */
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.free_membership h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.free_membership h2 span:first-child {
+    color: darkorchid; /* "Free" */
+}
+
+.free_membership h2 span:last-child {
+    color: white; /* "Membership" */
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+.membership-card {
+    background-color: transparent;
+    padding: 20px;
+    flex: 1 1 22%;
+    text-align: center;
+}
+
+.membership-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.free_membership button {
+    background-color: darkorchid;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.free_membership button:hover {
+    opacity: 0.9;
+}
