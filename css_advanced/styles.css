@@ -1,0 +1,118 @@
+/* General background styling for header & main section */
+.background-area {
+    background-image: url("Images/Object.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Header layout */
+header {
+    padding: 20px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 167.02px;
+    height: 29.46px;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-family: 'Source Sans Pro';
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Main section layout */
+.main_part {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+}
+
+/* Main heading */
+.main_part h1 {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* Span words below heading */
+.main_part span {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Call to action button */
+.main_part button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: darkorchid;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* Learn from the pros heading */
+.main_part h2 {
+    position: relative;
+    top: -30px;
+    margin-top: 100px;
+    font-size: 32px;
+    font-family: 'Source San Pro';
+}
+
+.main_part h2 .highlight {
+    color: darkorchid;
+    font-size: 32px;
+}
+
+/* Pros section (horizontal layout) */
+.pros {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 20px;
+}
+
+.pros div {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    color: white;
+    max-width: 150px;
+}
+
+/* Circular image */
+.circular {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
