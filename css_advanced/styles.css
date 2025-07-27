@@ -158,3 +158,123 @@ nav ul li a {
     font-style: italic;
     line-height: 33.6px;
 }
+
+/* Tutorials Section */
+.tutorials {
+    background-color: white;
+    padding: 60px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Section Heading */
+.tutorials h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.tutorials h2 .highlight {
+    color: darkorchid;
+    font-weight: bold;
+}
+
+/* Container for all tutorial cards */
+.tutorials-container {
+    display: flex;
+    align-items: stretch; /* Ensures all cards match height */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* Each Tutorial Card */
+.tutorial-card {
+    flex: 0 0 21%; /* Fixed width to ensure 4 cards in 100% */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Image area with play overlay */
+.thumbnail {
+    position: relative;
+    width: 100%;
+}
+
+.thumbnail .background-img {
+    width: 100%;
+    display: block;
+}
+
+.thumbnail .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+}
+
+/* Tutorial title */
+.tutorial-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 15px 5px;
+}
+
+/* Description text */
+.tutorial-card .description {
+    font-size: 14px;
+    color: #555;
+    margin: 0 15px 10px;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+/* Author section */
+.author {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px 0;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: mediumpurple;
+}
+
+/* Rating and time */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 15px;
+}
+
+.rating img {
+    height: 12px;
+}
+
+.rating p {
+    font-size: 12px;
+    color: mediumpurple;
+    margin-left: auto;
+}
