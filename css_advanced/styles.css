@@ -9,7 +9,7 @@
 
 /* Header layout */
 header {
-    padding: 20px 100px;
+    padding: 60px 100px;
 }
 
 nav {
@@ -43,9 +43,10 @@ nav ul li a {
 
 /* Main section layout */
 .main_part {
-    max-width: 1440px;
+    width: 1440px;
+    height: 1093px;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -54,8 +55,8 @@ nav ul li a {
     font-size: 120px;
     font-weight: bold;
     color: white;
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin-top: 130px;
+    margin-bottom: 30px;
 }
 
 /* Span words below heading */
@@ -68,7 +69,7 @@ nav ul li a {
 
 /* Call to action button */
 .main_part button {
-    margin-top: 30px;
+    margin-top: 70px;
     padding: 12px 24px;
     background-color: darkorchid;
     border: none;
@@ -83,7 +84,7 @@ nav ul li a {
 .main_part h2 {
     position: relative;
     top: -30px;
-    margin-top: 100px;
+    margin-top: 230px;
     font-size: 32px;
     font-family: 'Source San Pro';
 }
@@ -97,13 +98,12 @@ nav ul li a {
 .pros {
     display: flex;
     justify-content: center;
-    gap: 120px;
-    margin-bottom: 20px;
+    gap: 150px;
+    margin-top: 90px;
 }
 
 .pros div {
-    position: relative;
-    top: -30px;
+    margin-bottom: 0px;
     text-align: center;
     color: white;
     max-width: 150px;
@@ -115,4 +115,46 @@ nav ul li a {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
+}
+.testimonials {
+    background-color: darkorchid;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.testimonials img {
+    width: 100%;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials blockquote {
+    font-size: 22px;
+    font-weight: regular;
+    line-height: 33.6px;
+    margin: 0 0 20px 0;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.testimonials h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 33.6px;
+}
+
+.testimonials p {
+    margin: 5px 0 0;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 33.6px;
 }
