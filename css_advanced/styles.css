@@ -380,3 +380,42 @@ nav ul li a {
     font-size: 14px;
     line-height: 1.5;
 }
+
+footer {
+    background-color: #071629; /* Dark bluish-gray */
+    padding: 40px 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 20px; /* Adjust as needed */
+}
+
+.footer-icons a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-icons a:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    color: #8c8c8c; /* Gray text */
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
