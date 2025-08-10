@@ -1,0 +1,107 @@
+/* ========== RESET STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== CSS VARIABLES ========== */
+:root {
+    --primary-color: #FF6565;
+    --white: #ffffff;
+    --dark-bg: #071629;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ========== GENERAL STYLES ========== */
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+/* Container helper */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+    background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+    color: var(--white);
+    padding-top: 20px;
+}
+
+/* Header top: logo + nav */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* ========== HERO TEXT ========== */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 180px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Call to action button */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+     margin-top: 40px;
+}
+
+.btn:hover {
+    background: #ff7b7b;
+}
+
+/* Extra lorem paragraph */
+.hero-lorem {
+    max-width: 800px;
+    margin: 50px auto 0;
+    font-size: 1rem;
+    line-height: 1.6;
+     margin-top: 80px;
+}
