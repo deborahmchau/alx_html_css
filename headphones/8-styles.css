@@ -1,0 +1,426 @@
+/* ========== RESET STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== CSS VARIABLES ========== */
+:root {
+    --primary-color: #FF6565;
+    --white: #ffffff;
+    --dark-bg: #071629;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ========== GENERAL STYLES ========== */
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+/* Container helper */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+    background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+    color: var(--white);
+    padding-top: 20px;
+}
+
+/* Header top: logo + nav */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* ========== HERO TEXT ========== */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 250px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Call to action button */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+     margin-top: 40px;
+}
+
+.btn:hover {
+    background: #ff7b7b;
+}
+
+/* Extra lorem paragraph */
+.hero-lorem {
+    max-width: 800px;
+    margin: 50px auto 0;
+    font-size: 1rem;
+    line-height: 1.6;
+     margin-top: 80px;
+}
+
+/* ========== WHAT WE DO SECTION ========== */
+.what-we-do {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Services grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+/* Service card */
+.service {
+    padding: 20px;
+}
+
+/* Icon styling */
+.service span {
+    font-size: 4rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ========== OUR RESULTS SECTION ========== */
+.our-results {
+    background: url("images/headphones_hero_2.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.our-results .section-intro {
+    color: #fff;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* Results grid for desktop */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    gap: 100px;
+    justify-content: center;
+}
+
+/* Pentagon icon container */
+.pentagon {
+    background: url("images/pentagone.png") center/contain no-repeat;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Content inside pentagon */
+.pentagon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pentagon-content .percentage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.pentagon-content .label {
+    font-size: 0.85rem;
+    color: white;
+    max-width: 100%;
+}
+
+/* Tablet view: 2 per row */
+@media (max-width: 900px) {
+    .results-grid {
+        grid-template-columns: repeat(2, 160px);
+        gap: 40px;
+    }
+}
+
+/* Mobile view: 1 per row */
+@media (max-width: 480px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .pentagon {
+        width: 120px;
+        height: 120px;
+    }
+    .pentagon-content .percentage {
+        font-size: 1.2rem;
+    }
+    .pentagon-content .label {
+        font-size: 0.75rem;
+    }
+}
+
+/* ========== CONTACT US SECTION ========== */
+.contact-us {
+  background: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+  color: black;
+}
+
+.contact-us h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+/* Container for the fields stacked vertically */
+.contact-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 400px;
+  margin: 0 auto 60px;
+}
+
+/* Each field container */
+.field h2 {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* The dotted line to fill info */
+.input-line {
+  border-bottom: 2px dotted black;
+  height: 2px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Button styling matches previous .btn */
+.contact-btn {
+  display: inline-block;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background-color: #071629; /* Navy blue */
+  padding: 30px 20px 40px;
+  color: #aaa; /* Greyish text for copyright */
+  font-family: var(--font-family);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.social-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons span {
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons span:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #1a2a47;
+  padding-top: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #888; /* greyish */
+}
+
+/* Bounce and scale animation for What we do icons */
+@keyframes bounceScale {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px);
+    opacity: 0.8;
+  }
+}
+
+.services .service span {
+  animation: bounceScale 3s ease-in-out infinite;
+}
+
+/* Hover scale and rotate for pentagons */
+.pentagon {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.pentagon:hover {
+  transform: scale(1.15) rotate(10deg);
+  opacity: 0.85;
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger-line {
+  width: 28px;
+  height: 3px;
+  background-color: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive: show hamburger and hide nav by default on small screens */
+@media (max-width: 480px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px; /* height of header or adjust */
+    right: 20px;
+    background: var(--dark-bg);
+    border-radius: 8px;
+    width: 180px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav a {
+    color: var(--white);
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
+  /* Show hamburger button */
+  .hamburger {
+    display: flex;
+  }
+}
